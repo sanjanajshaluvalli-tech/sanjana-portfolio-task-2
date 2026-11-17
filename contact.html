@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Contact Sanjana J S for projects, collaboration and web development opportunities.">
+    <meta name="author" content="Sanjana J S">
+    <meta name="robots" content="index, follow">
+
+    <title>Contact | Sanjana J S</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <a class="brand" href="index.html" aria-label="Sanjana home">
+                Sanjana<span>.</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-controls="primary-navigation"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-list" id="primary-navigation">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" aria-current="page">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button
+                class="theme-toggle"
+                type="button"
+                data-theme-toggle
+                aria-label="Switch to dark mode"
+                aria-pressed="false"
+            >
+                <span class="theme-icon" aria-hidden="true">🌙</span>
+                <span class="sr-only">Toggle colour theme</span>
+            </button>
+
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <header class="page-heading">
+            <p class="eyebrow">Get in touch</p>
+
+            <h1>Let's <span class="accent-text">Connect.</span></h1>
+
+            <p>
+                Have a question, project idea or opportunity?
+                Feel free to send me a message. I'd be happy to connect.
+            </p>
+        </header>
+
+        <section class="content-section">
+            <div class="container contact-layout">
+
+                <!-- Contact Information -->
+                <aside
+                    class="contact-card"
+                    aria-labelledby="contact-info-title"
+                >
+
+                    <p class="eyebrow">Contact information</p>
+
+                    <h2 id="contact-info-title">Find Me Here</h2>
+
+                    <p>
+                        Feel free to contact me about projects,
+                        technology, internships or collaboration.
+                    </p>
+
+                    <div class="contact-detail">
+                        <h3>Email</h3>
+                        <p>
+                            <a href="mailto:sanjanajshaluvalli@gmail.com">
+                                sanjanajshaluvalli@gmail.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <h3>LinkedIn</h3>
+                        <p>
+                            <a
+                                href="https://www.linkedin.com/in/sanjana-j-s-haluvalli-02609b396"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View my LinkedIn profile
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <h3>GitHub</h3>
+                        <p>
+                            <a
+                                href="https://github.com/sanjanajshaluvalli-tech"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View my GitHub profile
+                            </a>
+                        </p>
+                    </div>
+
+                </aside>
+
+                <!-- Contact Form -->
+                <section
+                    class="form-panel"
+                    aria-labelledby="form-title"
+                >
+
+                    <p class="eyebrow">Send a message</p>
+
+                    <h2 id="form-title">I'd Love to Hear From You</h2>
+
+                    <form
+                        id="contact-form"
+                        action="https://formsubmit.co/sanjanajshaluvalli@gmail.com"
+                        method="POST"
+                    >
+
+                        <!-- Default email subject -->
+                        <input
+                            type="hidden"
+                            name="_subject"
+                            value="New message from Sanjana's Portfolio"
+                        >
+
+                        <!-- Email template -->
+                        <input
+                            type="hidden"
+                            name="_template"
+                            value="table"
+                        >
+
+                        <!-- Spam protection -->
+                        <input
+                            type="text"
+                            name="_honey"
+                            class="honey-field"
+                            hidden
+                            autocomplete="off"
+                            tabindex="-1"
+                            aria-hidden="true"
+                        >
+
+                        <div class="form-field">
+                            <label for="name">Your Name *</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                minlength="2"
+                                maxlength="80"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-field">
+                            <label for="sender-email">Your Email *</label>
+
+                            <input
+                                type="email"
+                                id="sender-email"
+                                name="email"
+                                placeholder="Enter your email address"
+                                maxlength="254"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-field">
+                            <label for="subject">
+                                Subject (Optional)
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="visitor_subject"
+                                placeholder="Enter a subject (optional)"
+                                maxlength="120"
+                            >
+                        </div>
+
+                        <div class="form-field">
+                            <label for="message">Your Message *</label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Write your message here..."
+                                minlength="10"
+                                maxlength="5000"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button
+                            class="button"
+                            id="submit-button"
+                            type="submit"
+                        >
+                            Send Message
+                        </button>
+
+                        <p class="form-help">
+                            * Name, email and message are required.
+                        </p>
+
+                        <p
+                            id="form-status"
+                            class="status-message"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+
+                    </form>
+
+                </section>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <p>
+            © <span class="current-year">2026</span>
+            Sanjana J S. All rights reserved.
+        </p>
+
+        <p>
+            <a href="mailto:sanjanajshaluvalli@gmail.com">Email</a>
+            ·
+            <a
+                href="https://www.linkedin.com/in/sanjana-j-s-haluvalli-02609b396"
+                target="_blank"
+                rel="noopener noreferrer"
+            >LinkedIn</a>
+            ·
+            <a
+                href="https://github.com/sanjanajshaluvalli-tech"
+                target="_blank"
+                rel="noopener noreferrer"
+            >GitHub</a>
+        </p>
+
+    </footer>
+
+</body>
+</html>
