@@ -156,6 +156,37 @@ document.querySelectorAll(".current-year").forEach((element) => {
     element.textContent = new Date().getFullYear();
 
 });
+// Show success message after contact form submission
+const urlParams = new URLSearchParams(window.location.search);
+
+if (urlParams.get("message") === "success") {
+    const main = document.querySelector("main");
+
+    if (main) {
+        const successMessage = document.createElement("div");
+
+        successMessage.className = "success-message";
+        successMessage.setAttribute("role", "status");
+        successMessage.setAttribute("aria-live", "polite");
+
+        successMessage.innerHTML = `
+            <span class="success-icon">✓</span>
+            <div>
+                <h3>Thank You!</h3>
+                <p>Your message has been sent successfully.</p>
+            </div>
+        `;
+
+        main.prepend(successMessage);
+    }
+
+    // Remove the query parameter from the address bar
+    window.history.replaceState(
+        {},
+        document.title,
+        window.location.pathname
+    );
+}
 
 
 /* 4. CONTACT FORM VALIDATION */
@@ -191,5 +222,6 @@ if (contactForm) {
         // The browser submits the form to FormSubmit
 
     });
+   
 
 }
