@@ -1069,8 +1069,7 @@ p {
         border: 1px solid #777777;
     }
 }
-/* Contact Form Success Message */
-
+/* SUCCESS MESSAGE - LIGHT MODE */
 .success-message {
     max-width: 850px;
     margin: 30px auto;
@@ -1080,14 +1079,27 @@ p {
     align-items: center;
     gap: 16px;
 
-    background: var(--card-bg, #eef7ff);
-    border: 1px solid #65b98b;
+    background: #eaf5ff;
+    color: #183153;
+
+    border: 1px solid #9cc9ed;
     border-left: 5px solid #269b65;
     border-radius: 12px;
-
-    color: var(--text-color, #243447);
 }
 
+.success-message h3 {
+    color: #183153;
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+
+.success-message p {
+    color: #344b63;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* SUCCESS ICON */
 .success-icon {
     width: 42px;
     height: 42px;
@@ -1098,23 +1110,39 @@ p {
     justify-content: center;
 
     background: #269b65;
-    color: white;
-    border-radius: 50%;
+    color: #ffffff;
 
+    border-radius: 50%;
     font-size: 23px;
     font-weight: 700;
 }
 
-.success-message h3 {
-    margin: 0 0 5px;
-    font-size: 18px;
+/* SUCCESS MESSAGE - DARK MODE */
+body.dark-mode .success-message,
+body.dark-theme .success-message,
+body[data-theme="dark"] .success-message,
+.dark-mode .success-message {
+    background: #172b49;
+    color: #ffffff;
+    border: 1px solid #456487;
+    border-left: 5px solid #42c987;
 }
 
-.success-message p {
-    margin: 0;
-    font-size: 14px;
+body.dark-mode .success-message h3,
+body.dark-theme .success-message h3,
+body[data-theme="dark"] .success-message h3,
+.dark-mode .success-message h3 {
+    color: #ffffff;
 }
 
+body.dark-mode .success-message p,
+body.dark-theme .success-message p,
+body[data-theme="dark"] .success-message p,
+.dark-mode .success-message p {
+    color: #d6e5f5;
+}
+
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 600px) {
     .success-message {
         margin: 20px 15px;
